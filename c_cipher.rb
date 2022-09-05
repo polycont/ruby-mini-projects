@@ -2,7 +2,7 @@ def caesar_cipher(string, shift)
   alphabet = ('a'..'z').to_a
   new_string = []
   string = string.split('').each { |letter| 
-    if alphabet.include?(letter) == false && alphabet.include?(letter.downcase) == false
+    if alphabet.include?(letter.downcase) == false
       new_string << letter
     elsif letter == letter.upcase
       letter = letter.downcase
