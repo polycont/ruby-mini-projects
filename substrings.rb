@@ -17,4 +17,4 @@ def substrings(words, dictionary)
   return word_hash
 end
 
-p substrings("Howdy partner, sit down! How is it going?", dictionary)
+p substrings("Howdy partner, sit down! How's it going?", dictionary)
