@@ -2,15 +2,14 @@ dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","o
 
 def substrings(words, dictionary)
   word_hash = {}
-  words = words.downcase.split(/\W+/)
+  words = words.downcase.split(' ')
   words.each do |word|
     dictionary.each do |dict|
-      if dict.match(word) != nil # count variable is globally incrementing
-        if word_hash.key?(word) # If word is already in hash
-          count = word_hash[word]
-          word_hash[word] = count += 1 # Increment hash number
+      if word.include?(dict) # If word includes dict
+        if word_hash[dict] == nil # If dict doesn't already exist in hash...
+          word_hash[dict] = 1 # Add word to hash with value of 1
         else
-          word_hash[word] = 1 # Add word to hash with value of 1
+          word_hash[dict] += 1 # Increment dict's value ncrement value
         end
       end
     end
