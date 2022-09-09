@@ -16,3 +16,5 @@ def bubble_sort(array)
 end
 
 p bubble_sort([4, 2, 1, 9, 8, 8, 5, 4, 3, 1, 99, 43])
+
+# Credit to WyndFyre for the loop end condition inspiration
