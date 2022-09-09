@@ -9,7 +9,7 @@ def substrings(words, dictionary)
         if word_hash[dict] == nil # If dict doesn't already exist in hash...
           word_hash[dict] = 1 # Add word to hash with value of 1
         else
-          word_hash[dict] += 1 # Increment dict's value ncrement value
+          word_hash[dict] += 1 # Increment dict's value
         end
       end
     end
